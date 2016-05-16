@@ -2,6 +2,8 @@ package org.hibernate.init;
 
 
 
+import java.util.Date;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
@@ -26,6 +28,9 @@ public class HibernateInitializer {
 		
 		user.setUserId(1);
 		user.setUserName("First user");
+		user.setJoinedDate(new Date());
+		user.setAddress("First User Address");
+		user.setDescription("First User Description");
 		
 		factory = HibernateInitializer.getSessionFactory();
 		
