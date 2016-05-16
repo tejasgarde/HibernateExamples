@@ -15,6 +15,7 @@ public class HibernateInitializer {
 	public static void main(String[] args) {
 		
 		HibernateInitializer.simpleInsert();
+		
 	
 		HibernateInitializer.simpleRetriveUserDetails();
 	}
